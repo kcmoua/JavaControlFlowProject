@@ -49,12 +49,12 @@ public class ControlFlowProject {
             input.nextLine();       // consume the \n character
             System.out.println("What is the name of your favorite actor/actress?");
             String actName = input.nextLine();      // actor/actress name input
-            int randNumInput =0;        // initialize randNumInput for the user's random number between 1-50
+            int randNumInput =0;        // initialize randNumInput for the user's random number input
             do{     // run the code once while the number is out of the 1-50 range
                 System.out.println("Enter a random number between 1 and 50.");
                 randNumInput = input.nextInt();     // rand number between 1 and 50 input
                 input.nextLine();       // consume the \n character
-            } while(randNumInput<=1 || randNumInput>=50);
+            } while(randNumInput<=1 || randNumInput>=50);       // repeat the code if the number is not between 1-50
 
             int minRange = 1;       // initialize the min range number
             int maxRangeFive = 65;      // initialize the max range number for 5 non-magic ball numbers and 3 random numbers
@@ -80,7 +80,7 @@ public class ControlFlowProject {
                 magicBallNum -= 75;
             }
 
-             int userNumOne = 0;        // convert the 3rd letter of petName to its decimal value for the 1st user number
+            int userNumOne = 0;        // convert the 3rd letter of petName to its decimal value for the 1st user number
             if(petName.length()<3) {        // if the pet name has less than 3 characters, use the decimal value of the last character
                 userNumOne = (int)petName.charAt(petName.length()-1);
             } else {        // else use the 3rd character value
