@@ -50,7 +50,7 @@ public class ControlFlowProject {
             System.out.println("What is the name of your favorite actor/actress?");
             String actName = input.nextLine();      // actor/actress name input
             int randNumInput =0;        // initialize randNumInput for the user's random number input
-            do{     // run the code once while the number is out of the 1-50 range
+            do {     // run the code once while the number is out of the 1-50 range
                 System.out.println("Enter a random number between 1 and 50.");
                 randNumInput = input.nextInt();     // rand number between 1 and 50 input
                 input.nextLine();       // consume the \n character
